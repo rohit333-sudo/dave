@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>form</title>
+    <link rel="stylesheet" type="text/css" href="form2cs.css" />
+    <script type="text/javascript" src="form.js"></script>
+  </head>
+  <body>
+    <div class="container">
+		
+      <div class="container1">
+        <div class="head"><h1>Register Here</h1></div>
+	
+		<div class="formContainer">
+        <form method="post" class="form">
+
+			<div class="row1">
+			<div class="fields">
+            <label>First name</label>
+            <input
+              type="textbox"
+           
+              placeholder="first name"
+              class="input"
+			  name="firstName"
+        onchange="handleForm()"
+      /  >
+      <div> <p id="errFirstName" style="color: rgb(255, 0, 0);font-weight:bold"></p></div>
+          </div>
+
+          <div class="fields">
+            <label>Last name </label>
+
+            <input
+              type="textbox"
+           
+              placeholder="last name"
+			  class="input"
+			  name="lastName"
+        onchange="handleForm()"/>
+        <div> <p id="errLastName" style="color: rgb(255, 0, 0);font-weight:bold;"></p></div>
+          </div>
+
+		</div>
+		<div class="row1">
+          <div class="fields">
+            <label>City</label>
+            <input
+              type="textbox"
+         
+              placeholder="age"
+              class="input"
+			  name="city"
+        onchange="handleForm()"/>
+        <div> <p id="errCity" style="color: rgb(255, 0, 0);font-weight:bold;"></p></div>
+          </div>
+          <div class="fields">
+            <label>Email </label>
+            <input
+              type="email"
+            
+              placeholder="email"
+			  class="input"
+			  name="email" onchange="handleForm()"/>
+        <div> <p id="errEmail" style="color: rgb(255, 0, 0);font-weight:bold;"></p 20px;p></div>
+          </div>
+		</div>
+		<div class="row1">
+          <div class="fields">
+            <label>Mobile no</label>
+            <input type="number" 
+			class="input"
+			placeholder="mobile no"
+			name="mobileNumber" onchange="handleForm()"
+      /> 
+      <div> <p id="errMobileNumber" style="color: rgb(255, 0, 0);font-weight:bold;"></p></div>
+          </div>
+		  <div class="fields">
+			<label for="birthday">DOB</label>
+			<input type="date"
+			    class="input"
+			  name="dob"
+        onchange="handleForm()"/>
+        <div> <p id="errDob" style="color: rgb(255, 0, 0);font-weight:bold;"></p></div>
+          </div>
+		</div>
+
+		<div class="row1">
+			<div class="fields">
+			  <label>Pincode</label>
+			  <input type="number" 
+			  class="input"
+			  placeholder="pincode" 
+        name="pincode" onchange="handleForm()"/>
+        <div> <p id="errPincode" style="color: rgb(255, 0, 0);font-weight:bold;"></p></div>
+			</div>
+			<div class="fields">
+			  <label for="state">State</label>
+			  <input type="text"
+				  class="input"
+				name="state" onchange="handleForm()"/>
+        <div> <p id="errState" style="color: rgb(255, 0, 0);font-weight:bold;"></p></div>
+			</div>
+		  </div>
+		  <div class="row2">
+			<div >
+        <button onclick="handleSubmit()"><span></span>Submit</button>
+		  </div>
+    </div>
+
+		          </form>
+				</div>
+      </div>
+
+
+      <div class="container2">
+
+
+
+        
+        <div ><input id="searchBox" oninput="search()" type="text"/> Search here ...!!!</div>
+        
+        <table id="table">
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>City</th>
+            <th>Mobile</th>
+       
+          </tr>
+
+        </table>
+
+        <div id="pagination">
+          <!-- <a href="#">&laquo;</a>
+          <a href="#">1</a>
+          <a href="#" class="active">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          <a href="#">&raquo;</a> -->
+        </div>
+
+
+
+      </div>
+    </div>
+  </body>
+</html>
