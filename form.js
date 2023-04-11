@@ -164,10 +164,10 @@ function validate(data) {
 function search() {
   let key = event.target.value;
   // console.log(key)
-  key1=key.toUpperCase()
-  let key2=key.toLowerCase()
+  let key1=key.toLowerCase();
+  let key2=key.toUpperCase()
   let filter = array.filter((val) => {
-    if (val.firstName.includes(key1) || val.firstName.includes(key2))  {
+    if (val.firstName.includes(key1)|| val.firstName.includes(key2)) {
       return val;
     }
   });
